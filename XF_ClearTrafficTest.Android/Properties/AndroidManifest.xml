@@ -6,7 +6,8 @@
           android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="21" 
             android:targetSdkVersion="28" />
-	<application android:label="XF ClearTrafficTest App">
+	<application android:label="XF ClearTrafficTest App"
+               android:usesCleartextTraffic="true">
     
   </application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
