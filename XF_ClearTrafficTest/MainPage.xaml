@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XF_ClearTrafficTest.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="XF ClearTrafficTest App"
+             Padding="8"
+             mc:Ignorable="d">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="urlText"
+                   HorizontalOptions="FillAndExpand"
+                   Placeholder="URL"
+                   Text="http://www.mext.go.jp/" />
+            <Button x:Name="goButton"
+                    WidthRequest="80"
+                    Text="Go" />
+        </StackLayout>
+        <WebView x:Name="webView"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 Source="https://docs.microsoft.com/ja-jp/xamarin/xamarin-forms/user-interface/webview" />
+    </StackLayout>
+
+</ContentPage>
